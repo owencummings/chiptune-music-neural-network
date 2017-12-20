@@ -13,7 +13,7 @@ def note_to_number(note_str):
         'G#': 8,
         'A-': 9,
         'A#': 10,
-        'B': 11,
+        'B-': 11,
         'B#': 12
     }
 
@@ -25,9 +25,23 @@ def note_to_number(note_str):
 
 
 def line_to_array(txt):
+    '''
+    arr = []
 
+    txt = txt[9:]
+    arr = arr + note_to_number(txt[0:3])
+    txt = txt[]
+    '''
     pass
 
 def file_parse(path_to_file):
+    filename = path_to_file
+    f = open(filename, "r")
+    arr = f.readlines()
+    arr = [x for x in arr if x[0:3] == 'ROW']
+    arr = [line_to_array(x) for x in arr]
+    return arr
+
+def arr_to_file(arr):
 
     pass
