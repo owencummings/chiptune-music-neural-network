@@ -4,5 +4,4 @@ from text_parse import *
 
 
 if __name__ == "__main__":
-    print(note_to_number('C#4'))
-    print(file_parse('unaltered-songs/txt/01.txt'))
+    print(line_to_array('ROW 01 : ... .. E ... ... ... : ... .. E ... ... ... : G-4 00 . P7E : ... .. C ... : ... .. . ... ... : ... .. 5 ... ... : ... .. 5 ... ... : ... .. . ... ...'))
